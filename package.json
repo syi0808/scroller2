@@ -7,11 +7,11 @@
   "author": "syi0808",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/syi0808/scrol.git"
+    "url": "git+https://github.com/syi0808/scroller2.git"
   },
-  "homepage": "https://github.com/syi0808/scrol#readme",
+  "homepage": "https://github.com/syi0808/scroller2#readme",
   "bugs": {
-    "url": "https://github.com/syi0808/scrol/issues"
+    "url": "https://github.com/syi0808/scroller2/issues"
   },
   "keywords": [
     "scroll",

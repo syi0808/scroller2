@@ -1,4 +1,4 @@
-# Scrol
+# Scroller2
 
 A small deterministic engine for programmatic scrolling and target reveal.
 
