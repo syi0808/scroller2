@@ -3,7 +3,7 @@
 A small deterministic engine for programmatic scrolling and target reveal.
 
 ```ts
-import { createScrollEngine } from "scroll-kit"
+import { createScrollEngine } from "scroller2"
 
 const scroll = createScrollEngine()
 
@@ -15,7 +15,7 @@ await scroll.reveal(target, {
 })
 ```
 
-Install with `pnpm add scroll-kit`.
+Install with `pnpm add scroller2`.
 
 The engine discovers axis-aware scroll ancestors, plans each reveal as immutable data, then executes inner-to-outer with a geometry refresh between surfaces. It supports instant, tween, and lerp motion, external RAF, cancellation, retargeting, and scroll settlement.
 

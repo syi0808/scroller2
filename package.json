@@ -1,5 +1,5 @@
 {
-  "name": "scroll-kit",
+  "name": "scroller2",
   "version": "0.0.1",
   "description": "Deterministic programmatic scrolling and target reveal engine",
   "packageManager": "pnpm@11.21.0",
