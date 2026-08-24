@@ -1,4 +1,4 @@
-import { createScrollEngine } from "../dist/index.js"
+import { createScrollEngine } from "./dist/index.js"
 
 const distances = [100, 300, 700, 1500, 3000]
 const controls = document.querySelector("#controls")

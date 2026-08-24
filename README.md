@@ -17,6 +17,8 @@ await scroll.reveal(target, {
 
 Install with `pnpm add scroller2`.
 
+Try the [motion playground](https://syi0808.github.io/scroller2/).
+
 The engine discovers axis-aware scroll ancestors, plans each reveal as immutable data, then executes inner-to-outer with a geometry refresh between surfaces. It supports instant, tween, and lerp motion, external RAF, cancellation, retargeting, and scroll settlement.
 
 ## API
@@ -35,4 +37,4 @@ Set `autoRaf: false` when another runtime owns the frame clock. Call `scroll.raf
 
 ## Development
 
-Run `pnpm test` for the pure planner and runtime tests, and `pnpm build` for the ESM package. After building, serve the repository root and open `playground/index.html` to compare motion across 100–3000px distances.
+Run `pnpm test` for the pure planner and runtime tests, and `pnpm build` for the ESM package. The playground is deployed to GitHub Pages from `main`.
