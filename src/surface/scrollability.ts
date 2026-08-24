@@ -1,5 +1,5 @@
-const scrollableOverflow = new Set(["auto", "scroll", "overlay"])
+const scrollableOverflow = new Set(["auto", "scroll", "overlay"]);
 
 export function isScrollableOverflow(value: string): boolean {
-  return scrollableOverflow.has(value)
+  return scrollableOverflow.has(value);
 }

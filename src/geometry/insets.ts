@@ -1,13 +1,13 @@
-import type { Insets } from "../core/types.js"
+import type { Insets } from "../core/types.js";
 
 export function resolveInsets(value?: number | Partial<Insets>): Insets {
-  if (typeof value === "number") return { top: value, right: value, bottom: value, left: value }
+  if (typeof value === "number") return { top: value, right: value, bottom: value, left: value };
   return {
     top: value?.top ?? 0,
     right: value?.right ?? 0,
     bottom: value?.bottom ?? 0,
     left: value?.left ?? 0,
-  }
+  };
 }
 
 export function addInsets(...values: readonly Insets[]): Insets {
@@ -19,5 +19,5 @@ export function addInsets(...values: readonly Insets[]): Insets {
       left: sum.left + value.left,
     }),
     { top: 0, right: 0, bottom: 0, left: 0 },
-  )
+  );
 }

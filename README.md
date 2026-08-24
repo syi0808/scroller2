@@ -3,16 +3,16 @@
 A small deterministic engine for programmatic scrolling and target reveal.
 
 ```ts
-import { createScrollEngine } from "scroller2"
+import { createScrollEngine } from "scroller2";
 
-const scroll = createScrollEngine()
+const scroll = createScrollEngine();
 
 await scroll.reveal(target, {
   block: "nearest",
   visibility: "full",
   safeArea: { top: 64, right: 320, bottom: 32, left: 32 },
   motion: "smooth",
-})
+});
 ```
 
 Install with `pnpm add scroller2`.
@@ -24,13 +24,13 @@ The engine discovers axis-aware scroll ancestors, plans each reveal as immutable
 ## API
 
 ```ts
-scroll.planReveal(target, options)
-scroll.reveal(target, options)
-scroll.to(surface, { x, y }, options)
-scroll.by(surface, { x, y }, options)
-scroll.getState(surface)
-scroll.raf(time)
-scroll.destroy()
+scroll.planReveal(target, options);
+scroll.reveal(target, options);
+scroll.to(surface, { x, y }, options);
+scroll.by(surface, { x, y }, options);
+scroll.getState(surface);
+scroll.raf(time);
+scroll.destroy();
 ```
 
 Set `autoRaf: false` when another runtime owns the frame clock. Call `scroll.raf(time)` from that clock until the returned operation settles.
