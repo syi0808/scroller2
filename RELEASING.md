@@ -2,7 +2,7 @@
 
 ## 0.0.1
 
-The package metadata, changelog, CI, npm provenance, and `NPM_TOKEN` repository secret are prepared.
+The package metadata, changelog, Node 22/24 CI, npm provenance, and `NPM_TOKEN` repository secret are prepared.
 
 1. Confirm that the `main` CI workflow succeeds.
 2. Review the package with `pnpm pack --dry-run`.
