@@ -3,7 +3,7 @@
 A small deterministic engine for programmatic scrolling and target reveal.
 
 ```ts
-import { createScrollEngine } from "scrol"
+import { createScrollEngine } from "@syi0808/scrol"
 
 const scroll = createScrollEngine()
 
@@ -15,7 +15,7 @@ await scroll.reveal(target, {
 })
 ```
 
-Install with `pnpm add scrol`.
+Install with `pnpm add @syi0808/scrol`.
 
 The engine discovers axis-aware scroll ancestors, plans each reveal as immutable data, then executes inner-to-outer with a geometry refresh between surfaces. It supports instant, tween, and lerp motion, external RAF, cancellation, retargeting, and scroll settlement.
 
