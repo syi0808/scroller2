@@ -1,0 +1,52 @@
+{
+  "name": "scrol",
+  "version": "0.0.1",
+  "description": "Deterministic programmatic scrolling and target reveal engine",
+  "license": "MIT",
+  "author": "syi0808",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syi0808/scrol.git"
+  },
+  "homepage": "https://github.com/syi0808/scrol#readme",
+  "bugs": {
+    "url": "https://github.com/syi0808/scrol/issues"
+  },
+  "keywords": [
+    "scroll",
+    "scrolling",
+    "smooth-scroll",
+    "scroll-into-view",
+    "reveal"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "npm run typecheck && npm test && npm run build",
+    "prepack": "npm run check",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrol Motion Playground</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header>
+      <div>
+        <p class="eyebrow">SCROL LAB</p>
+        <h1>Motion Playground</h1>
+      </div>
+      <button id="run-all">Run all distances</button>
+    </header>
+    <form id="controls">
+      <label>Motion
+        <select name="motion">
+          <option value="smooth">Smooth</option>
+          <option value="snappy">Snappy</option>
+          <option value="gentle">Gentle</option>
+          <option value="instant">Instant</option>
+          <option value="lerp">Lerp</option>
+        </select>
+      </label>
+      <label>Alignment
+        <select name="alignment">
+          <option>nearest</option><option>start</option><option>center</option><option>end</option>
+        </select>
+      </label>
+      <label>Nested depth
+        <input name="depth" type="range" min="1" max="3" value="2">
+        <output name="depthOutput">2</output>
+      </label>
+      <label>Safe area
+        <input name="safeArea" type="range" min="0" max="80" value="24">
+        <output name="safeAreaOutput">24px</output>
+      </label>
+    </form>
+    <main id="comparisons"></main>
+    <template id="comparison-template">
+      <article>
+        <div class="card-heading"><strong></strong><button type="button">Run</button></div>
+        <div class="viewport"></div>
+        <dl><div><dt>Elapsed</dt><dd class="elapsed">—</dd></div><div><dt>Writes</dt><dd class="writes">—</dd></div></dl>
+      </article>
+    </template>
+    <script type="module" src="./playground.js"></script>
+  </body>
+</html>
