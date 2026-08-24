@@ -15,7 +15,7 @@ await scroll.reveal(target, {
 })
 ```
 
-Install with `npm install scrol`.
+Install with `pnpm add scrol`.
 
 The engine discovers axis-aware scroll ancestors, plans each reveal as immutable data, then executes inner-to-outer with a geometry refresh between surfaces. It supports instant, tween, and lerp motion, external RAF, cancellation, retargeting, and scroll settlement.
 
@@ -35,4 +35,4 @@ Set `autoRaf: false` when another runtime owns the frame clock. Call `scroll.raf
 
 ## Development
 
-Run `npm test` for the pure planner and runtime tests, and `npm run build` for the ESM package. After building, serve the repository root and open `playground/index.html` to compare motion across 100–3000px distances.
+Run `pnpm test` for the pure planner and runtime tests, and `pnpm build` for the ESM package. After building, serve the repository root and open `playground/index.html` to compare motion across 100–3000px distances.

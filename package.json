@@ -2,6 +2,7 @@
   "name": "scrol",
   "version": "0.0.1",
   "description": "Deterministic programmatic scrolling and target reveal engine",
+  "packageManager": "pnpm@11.21.0",
   "license": "MIT",
   "author": "syi0808",
   "repository": {
@@ -40,8 +41,8 @@
   "files": ["dist"],
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "check": "npm run typecheck && npm test && npm run build",
-    "prepack": "npm run check",
+    "check": "pnpm typecheck && pnpm test && pnpm build",
+    "prepack": "pnpm check",
     "test": "vitest run",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
